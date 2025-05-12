@@ -1,6 +1,5 @@
-import time
-
 import pytest
+
 
 from src.main import hello
 
@@ -19,6 +18,7 @@ def test_hello_type_error():
 
 
 def test_hello_performance():
+    import time
     start = time.time()
     for _ in range(1000):
         hello("EPSI")
