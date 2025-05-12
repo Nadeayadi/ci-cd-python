@@ -1,6 +1,4 @@
 import pytest
-
-
 from src.main import hello
 
 
@@ -23,4 +21,3 @@ def test_hello_performance():
     for _ in range(1000):
         hello("EPSI")
     assert time.time() - start < 1
-
